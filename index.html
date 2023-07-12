@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+   
+  </head>
+  <body>
+    <!-- START NAV -->
+
+
+    <header>
+      
+      
+      <div class="ham">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+
+      </div>
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+       
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+
+
+
+    <style>
+
+header{
+  width: 100%;
+  height: 50px;
+  background:black;
+  padding-left: 25px;
+
+
+}
+      .ham{
+        display: none;
+      }
+      @media only screen and (max-width: 900px){
+
+        .ham{
+          display: block;
+          cursor: pointer;
+        }
+        .ham .line{
+          width: 30px;
+          height: 3px;
+          background: white;
+          margin: 6px 0;
+
+        }
+        .nav{
+          height:0;
+          position: absolute;
+          top: 80px;
+          left: 0;
+          right: 0;
+          background: black;
+          transition: 0.5s;
+          /* color: white; */
+          overflow: hidden;
+        }
+        .nav.active{
+          height: 250px;
+        }
+        .nav.active ul{
+          opacity: 1;
+        }
+
+        .nav ul{
+          display: block;
+          width: fit-content;
+          margin: 8px auto 0 auto;
+          text-align: center;
+          transition: 0.5s;
+          opacity: 0;
+
+        }
+        .nav ul li a{
+          margin-bottom: 12px;
+         
+        }
+      }
+    </style>
+   
+  
+
+    <!-- END NAV -->
+
+    <!-- START WELCOME SECTION -->
+
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hey I am Venkata Vamshi</h1>
+      <p>a web developer</p><br> 
+
+      <button id="book"><a href="./resume/Vamshi Resume.pdf">Download CV</a></button>
+      
+      
+    </section>
+
+    <!-- END WELCOME SECTION -->
+
+    <!-- START PROJECTS SECTION -->
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">These are some of my projects</h2>
+
+      <div class="projects-grid">
+     
+        <!-- new edit -->
+        <a
+        href="https://venkatavamshi.github.io/Gym-Management-/"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="./img/gym.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Gym 
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+
+        <a
+          href="https://venkatavamshi.github.io/law-site/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./img/law.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Law
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+
+        <a
+          href="https://venkatavamshi.github.io/Knight-bite/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./img/knight-bite.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Knight-Bite
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://venkatavamshi.github.io/Time-and-Date/#"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./img/dateandtime.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            live Date And time Using JS
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/wGqEga"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Wikipedia Viewer
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/KzXQgy"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Tic Tac Toe Game
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
+      <!-- edit -->
+      <a
+        href="./projects.html"
+        class="btn btn-show-all"
+        target="_blank"
+        >Show all<i class="fas fa-chevron-right"></i
+      ></a>
+    </section>
+
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+      </div>
+      <div class="contact-links">
+        <a
+          href="https://www.facebook.com/venkata.vamshi.9"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/venkatavamshi"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >  
+
+        <a href="tel:8310442742" class="btn contact-details"
+          ><i class="fas fa-mobile-alt"></i> Call me:- +91 8310442742</a
+        >
+      </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER SECTION -->
+
+    <footer>
+      <p>
+        This Portfolio is for vamshi
+      </p>
+      <p>
+        &copy; Copyrights Are Reserved
+        <a href="https://github.com/venkatavamshi" target="_blank"
+          >Venkata Vamshi</i
+        ></a>
+      </p>
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+     
+    <!-- navbar menu -->
+    <script>
+      ham = document.querySelector(".ham");
+      ham.onclick = function () {
+        navBar =document.querySelector(".nav");
+        navBar.classList.toggle("active");
+        
+      }
+     
+     </script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
